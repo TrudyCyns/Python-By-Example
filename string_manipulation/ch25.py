@@ -5,7 +5,8 @@ word = input("Enter a word: ")
 word = word.lower()
 
 # Word extension String.
-ext = "ay"
+ext = "way"
+rest = word[1:len(word)]
 
 # print(word[0])
 
@@ -13,4 +14,5 @@ ext = "ay"
 if word[0] == 'a' or word[0] == 'e' or word[0] == 'i' or word[0] == 'o' or word[0] == 'u':
     newWord = word+ext
 else:
-    newWord = ""
+    newWord = rest+word[0]+ext;
+print(newWord.lower())
